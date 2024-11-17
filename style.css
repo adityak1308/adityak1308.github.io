@@ -1,0 +1,70 @@
+body {
+    font-family: 'nunito';
+    
+    background:linear-gradient(to right ,black 0%,rgb(69, 69, 69) 100% ) ;
+    
+
+    
+    
+    
+  }
+
+  .sidenav {
+    height: 100%;
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+    overflow-x: hidden;
+    padding-top: 30px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+   color:white;
+    display: block;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+ 
+
+  .main {
+  
+    font-size: 28px; 
+    padding: 0%;
+    background-color: rgba(12, 12, 12, 0);
+    width: 100%;
+    
+  }
+  .card{
+      width:100% ;
+      height:auto;
+      margin-left: 250px;
+      margin-top: 30px;
+      display:flex;
+      padding: 40px;
+      padding-right: 0%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    
+  }
+
+  .left{
+    width:90% !;
+    height:auto;
+    align-items: left;
+  }
+  .right{
+    width: 45%;
+    height: auto;
+    align-items: right;
+    margin-left: 200px;
+    padding-top: 0%;
+
+  }
+

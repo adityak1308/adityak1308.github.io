@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connect page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <style>
+        body{
+          background-image: url(Images/background2.png),linear-gradient(to right ,black 0%,rgba(50, 50, 50, 0.893) 100% ) ;background-repeat: no-repeat;background-position: bottom right;
+        }
+        .main {
+          font-size: 28px; 
+          padding: 0px 10px;
+        }
+        .card{
+            width:90% ;
+            height:auto;
+            color: white;
+            margin-left: 20px;
+            margin-top: 30px;
+            display:flex;
+            padding: 40px;
+
+        }
+        .left{
+          width:45%;
+          height:auto;
+          align-items: left;
+          margin-left: 20px;
+        }
+        .right{
+          width: 45%;
+          height: auto;
+          align-items: right;
+        
+        }
+      
+        .form-control::placeholder {
+      color: white; /* Example: Blue placeholder text */
+      opacity: 0.5; /* Ensures full opacity */
+    }
+
+    .form-control:focus {
+  border-color: #ffffff; /* Green border on focus */
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); /* Optional: Green shadow */
+  outline: none; /* Remove default outline */
+}
+    </style>
+</head>
+<body>
+   
+
+    <div class="main" style="background-color: rgba(0, 0, 0, 0);margin-top: 100px;">
+
+      <div class="sidenav"><br><br>
+        <a href="index.html"data-bs-toggle="tooltip" title=" Home" data-bs-placement="right"  ><img src="Images/home inactive.png"> </a>
+        <a href="work.html" data-bs-toggle="tooltip" title=" Work" data-bs-placement="right" ><img src="Images/Work.png"></a>
+        <a href="Resume.html" data-bs-toggle="tooltip" title=" Resume" data-bs-placement="right" ><img src="Images/Resume icon.png"></a>
+        <a href="connect.html" data-bs-toggle="tooltip" title=" Connect" data-bs-placement="right" ><img src="Images/Connect active.png"></a>
+        <a href="fun.html" data-bs-toggle="tooltip" title=" Fun" data-bs-placement="right" ><img src="Images/Fun inactive.png"></a>
+      </div>
+
+      <div class="container mt-5" style="width: 80%;" > 
+        <div class="d-flex justify-content-between align-items-center" style="background-color: rgba(250, 235, 215, 0);" >
+         <div style="width: 48%;height: 400px;background-color: rgba(250, 235, 215, 0);padding: 20px;">
+          <h1 style="font-style: italic;color: #fbdf90;margin-bottom: 50px;font-weight: bold;"> Get in touch </h1>
+         
+            
+            <form > 
+              <div class="mb-3 mt-3">
+                <input type="name" class="form-control" id="name" placeholder="Your name" name="name" style="background-color: rgba(0, 0, 0, 0);color:white">
+              </div>
+                <div class="mb-3 mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Your email" name="email" style="background-color: rgba(0, 0, 0, 0);color:white">
+                </div>
+                <div>
+                  <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Your message" style="background-color: rgba(0, 0, 0, 0.014);color:white" ;></textarea>
+                </div>
+                <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="float: inline-start; margin-top: 50px;width: 50%;background-color: #f2dab0;color: black;border-color: #f2dab0;font-weight: bold;border-radius: 20px;">Send message</button>
+  
+            </form>
+           
+            
+
+         </div>
+         <div style="width: 48%;height: 400px;background-color: rgba(250, 235, 215, 0);border-radius: 8pt;padding: 20px;padding-top: 110px;">
+          <h4 style="font-style: italic;color: rgba(247, 241, 225, 0.749);">
+            Do you have any queries, ideas, would like to collaborate? You can reach out to me by.
+          </h4>
+          <h5 style="color: rgba(247, 241, 225, 0.749);margin-top: 40px;"> Email- aditya.kulkarni@mitaoe.ac.in  </h5>
+          <div style="float: inline-start;margin-top: 30px;">
+            
+            <a href="https://www.behance.net/adityakulkarni28"><img src="Images/Behance.png"></a> 
+            <a href="https://www.linkedin.com/in/aditya-kulkarni-a40114332/"><img src="Images/Indeed.png" ></a>
+            <a href="" ></a><img src="Images/instagram.png" ></a>
+            </div>
+          
+          
+         </div>
+         
+        </div>
+        
+      
+
+    </div>
+    <script>
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      </script>  
+</body>
+</html>
